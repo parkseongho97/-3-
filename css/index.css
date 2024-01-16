@@ -44,7 +44,7 @@ img {
 #header #nav .depth1 > li {
   float: left;
   position: relative;
-  margin: 0px 10px;
+  margin: 10px 20px 0px 0px;
   font-size: 17px;
   font-weight: bold;
   color: #333;
@@ -63,8 +63,8 @@ img {
 
 #header #nav .depth2 {
   position: absolute;
-  left: 0;
-  width: 130px;
+  left: 0%;
+  width: 120px;
   background-color: #ff0000;
   display: none;
   transition: all 0.2s;
@@ -84,13 +84,84 @@ img {
   background-color: #125587;
   color: white;
 }
-#section .slide {
+
+/* 슬라이드구역 */
+#section .slideOuter .slideInner {
   position: relative;
-  background: url(https://mwpdemo28097.mycafe24.com/wp-content/uploads/2023/09/main01.jpg)
-    no-repeat center / cover;
-  height: 100vh;
 }
-#section .slide img {
+#section .slideOuter .slideInner button.slick-arrow {
+  border: none;
+  background: none;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+#section .slideOuter .slideInner button.slick-next {
+  right: 50px;
+}
+#section .slideOuter .slideInner button.slick-prev {
+  left: 50px;
+  z-index: 999;
+}
+#section .slideOuter .slideInner ul.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10%;
+}
+#section .slideOuter .slideInner ul.slick-dots li {
+  display: inline-block;
+  margin: 0 3px;
+}
+#section .slideOuter .slideInner ul.slick-dots li button {
+  width: 9px;
+  height: 9px;
+  text-indent: 99999px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: transparent;
+  transition: all 0.2s;
+}
+#section .slideOuter .slideInner ul.slick-dots li.slick-active button {
+  border: 1px solid white;
+  background: white;
+  width: 18px;
+}
+
+/* 슬라이더멈춤버튼 */
+#section .slideOuter {
+  position: relative;
+}
+#section .slideOuter .plapau {
+  position: absolute;
+  bottom: 77px;
+  left: 50%;
+  margin-left: 40px;
+  color: white;
+  font-size: 15px;
+}
+
+#section .slide {
+  height: 700px;
+  position: relative;
+}
+
+#section .slide1 {
+  background: url(../img/slide01.jpg) no-repeat center / cover;
+}
+#section .slide2 {
+  background: url(../img/slide02.jpg) no-repeat center / cover;
+}
+#section .slide3 {
+  background: url(../img/slide03.jpg) no-repeat center / cover;
+}
+#section .slide4 {
+  background: url(../img/slide04.jpg) no-repeat center / cover;
+}
+
+#section .slide .text > img {
   width: 100%;
 }
 #section .slide .text {
@@ -105,10 +176,19 @@ img {
   font-size: 35px;
   margin: 0 0 25px;
   font-weight: bold;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+#section .slick-current.slick-active.slide .text h2 {
+  animation: fadeInUp 1s 1 both 0.3s;
 }
 #section .slide .text p {
   font-size: 18px;
-  font-weight: bold;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+#section .slick-current.slick-active.slide .text p {
+  animation: fadeInUp 1s 1 both 1.3s;
 }
 #About {
   width: 100%;
@@ -185,13 +265,13 @@ img {
 #section #creative > .text {
   float: left;
   width: 50%;
-  padding: 50px 100px;
+  padding: 0px 100px;
 }
 #section #creative > .text h2 {
   font-size: 40px;
   line-height: 1.2em;
   border-top: 1px solid #5a370f;
-  padding-top: 15px;
+  padding-top: 30px;
   color: #5a370f;
   color: ;
 }
@@ -332,15 +412,18 @@ img {
   height: 580px;
   text-align: center;
 }
+#section .best .row {
+  padding: 120px;
+}
 
 #section .best h2 {
   font-size: 40px;
-  padding: 80px 0 40px;
   font-weight: bold;
-  color: #125587;
+  color: #00906e;
 }
 #section .best p {
   font-size: 15px;
+  padding: 30px;
 }
 #footer {
   padding: 10px 0;
