@@ -257,7 +257,7 @@
 
   /* 지도구역 */
   #section .contact {
-    margin-top: -300px;
+    margin-top: -200px;
     padding: 0px 0 0px 0px;
     border-bottom: 1px solid rgb(230, 230, 230);
     width: 100%;
@@ -270,7 +270,6 @@
   #section .contact .map {
     float: none;
     width: 100%;
-    height: 100%;
     padding: 0px 10px;
   }
 
@@ -279,7 +278,7 @@
     width: 100%;
     background-color: #fff;
     height: auto;
-    padding: 20px 10px;
+    padding: 40px 10px 20px 10px;
     color: #333;
   }
   #section .contact .query h3 {
@@ -317,78 +316,102 @@
     display: inline-block;
   }
   #section .best {
-    background: url(../img/service.jpg) center / cover;
+    background: url(../img/service.jpg) right center / cover;
     height: 580px;
-    text-align: center;
   }
   #section .best .row {
-    padding-top: 90px;
+    padding: 100px 0;
   }
 
   #section .best h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
-    color: #00906e;
+    color: #262626;
   }
   #section .best p {
-    font-size: 15px;
+    font-size: 12px;
     padding: 30px;
   }
   /* footer구역 */
 
   #footer {
-    padding: 10px 0;
-    text-align: center;
+    margin-top: 50px;
+    text-align: left;
   }
   #footer .row {
     overflow: hidden;
-    margin: 10px 20px 50px 40px;
+    margin: 0px 20px 50px 40px;
+  }
+  #section .best h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #262626;
+  }
+  #section .best p {
+    font-size: 15px;
+    padding: 30px;
+  }
+  #footer {
+    padding: 10px 0;
+  }
+  #footer .row {
+    overflow: hidden;
   }
   #footer .btmlogo {
-    float: none;
-    margin-top: 70px;
+    float: left;
+    margin-top: 0px;
+    width: 100%;
   }
   #footer .btmmenu {
-    float: none;
-    padding: 20px 0 0 0px;
+    float: right;
+    width: 100%;
   }
-  #footer .btmmenu a {
-    word-break: keep-all;
+  #footer .btmmenu {
+    overflow: hidden;
+    padding: 10px 0;
   }
-
   #footer .btmmenu .companyinfo {
-    float: none;
+    float: left;
+    width: 100%;
     color: #333;
-    margin-right: 10px;
+    margin: 20px 0;
   }
-
+  #footer .btmmenu .companyinfo .list {
+    padding-bottom: 20px;
+  }
   #footer .btmmenu .companyinfo a {
     font-size: 14px;
-    margin: 0px 10px;
+    margin-right: 15px;
     transition: all 0.2s;
   }
   #footer .btmmenu .companyinfo a:hover {
     color: #125587;
     font-weight: bold;
   }
-
   #footer .btmmenu .sns {
-    float: none;
-    margin: 0px 0 0px 0;
+    float: right;
+    margin-left: 50px;
     padding: 10px 0;
     color: #333;
-    text-align: center;
+    width: 100%;
   }
   #footer .btmmenu .sns a {
     display: inline-block;
-    padding-right: 10px;
+    padding: 10px;
   }
   #footer .btmmenu .sns a:hover {
     color: #125587;
   }
-
+  #footer .btmmenu .addr {
+    padding: 10px 10px 10px 0;
+  }
   #footer .btmmenu .addr p {
     font-size: 13px;
-    word-break: keep-all;
+  }
+  #footer span {
+    display: block;
+  }
+  #footer span.slash {
+    display: none;
   }
 }

@@ -189,7 +189,7 @@ img {
   font-weight: bold;
   opacity: 0;
   transform: translate3d(0, 100%, 0);
-  word-break: keep-all;
+  word-break: keep;
 }
 #section .slick-current.slick-active.slide .text h2 {
   animation: fadeInUp 1s 1 both 0.3s;
@@ -367,8 +367,8 @@ img {
   margin-bottom: 70px;
 }
 #section .contact {
-  margin-top: -300px;
-  padding: 100px 0;
+  margin-top: -200px;
+  padding: 50px 0;
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 #section .contact .row {
@@ -420,7 +420,7 @@ img {
   display: inline-block;
 }
 #section .best {
-  background: url(../img/service.jpg) center / cover;
+  background: url(../img/service.jpg) right center / cover;
   height: 580px;
   text-align: center;
 }
@@ -431,14 +431,14 @@ img {
 #section .best h2 {
   font-size: 40px;
   font-weight: bold;
-  color: #00906e;
+  color: #262626;
 }
 #section .best p {
   font-size: 15px;
   padding: 30px;
 }
 #footer {
-  padding: 10px 0;
+  padding: 50px 0;
 }
 #footer .row {
   overflow: hidden;
