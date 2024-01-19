@@ -2,6 +2,7 @@
   .row {
     margin: 0 auto;
     max-width: 1170px;
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 990px) {
@@ -10,31 +11,40 @@
     position: static;
   }
   #header .row {
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .row {
-    margin: 0 auto;
-    max-width: 1170px;
+  #header h1 {
+    /* float: left; */
+    padding: 20px;
   }
+
   #header .row h1 {
-    float: left;
+    /* float: left; */
     padding: 20px 30px;
+    margin: 0;
   }
   #header .menuopen {
-    display: block;
-    float: right;
-    line-height: 85px;
-    height: 85px;
+    display: flex;
+    /* float: right; */
+    /* line-height: 85px; */
+    /* height: 85px; */
     font-size: 25px;
+    align-items: center;
     margin-right: 30px;
   }
   #header #nav {
-    float: right;
-    display: none;
+    /* float: right; */
+    display: block;
     width: 100%;
   }
+  #header #nav .depth1 {
+    display: block;
+  }
   #header #nav .depth1 > li {
-    float: none;
+    /* float: none; */
+    display: block;
     position: relative;
     margin: 0px 0px 0px 0px;
     font-size: 14px;
@@ -81,8 +91,6 @@
     transition: all 0.2s;
     font-size: 14px;
     color: #171717;
-  }
-  #header #nav .depth2 > li {
   }
 
   #header #nav .depth2 > li > a {
@@ -131,28 +139,35 @@
   }
 
   /* product 구역 */
-  #About > .contents > .product {
-    overflow: hidden;
-  }
-  #About > .contents > .product > li {
-    float: none;
-    width: 100%;
+  #About .contents ul {
+    /* overflow: hidden; */
+    display: block;
     text-align: center;
+  }
+  #About .contents ul li {
+    /* float: left; */
+    /* width: 33.33%; */
+    /* text-align: center; */
     padding: 10px;
     color: #333;
   }
-
+  #About > .contents > .product > li a img {
+    transition: all 0.5s;
+    transform: scale(1.05);
+    transform-origin: center top;
+  }
+  #About > .contents > .product > li a img:hover {
+    transform: scale(1.04);
+  }
   /* video구역 */
   #section #creative {
-    overflow: hidden;
-    padding: 100px 0;
+    /* overflow: hidden; */
+    display: block;
+    padding: 50px 0;
     background: #fafafa;
     margin-top: 50px;
   }
-  #section #creative > .videobox {
-    float: none;
-    width: 100%;
-  }
+
   #section #creative > .videobox video {
     width: 100%;
   }
@@ -207,11 +222,13 @@
     display: block;
   }
   #section .photo1 {
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
   }
   #section .itemsList ul li {
-    float: left;
-    width: 50%;
+    /* float: left; */
+    flex: 1 0 50%;
+    /* width: 50%; */
     padding: 5px;
     overflow: hidden;
   }
@@ -263,7 +280,8 @@
     width: 100%;
   }
   #section .contact .row {
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: block;
     width: 100%;
     margin: 0px;
   }
@@ -334,14 +352,6 @@
   }
   /* footer구역 */
 
-  #footer {
-    margin-top: 50px;
-    text-align: left;
-  }
-  #footer .row {
-    overflow: hidden;
-    margin: 0px 20px 50px 40px;
-  }
   #section .best h2 {
     font-size: 40px;
     font-weight: bold;
@@ -352,19 +362,22 @@
     padding: 30px;
   }
   #footer {
-    padding: 10px 0;
+    padding: 50px 0;
   }
   #footer .row {
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
   }
   #footer .btmlogo {
-    float: left;
-    margin-top: 0px;
-    width: 100%;
+    /* float: left; */
+    flex: 1;
+    margin-top: 20px;
+    /* width: 100%; */
   }
   #footer .btmmenu {
-    float: right;
-    width: 100%;
+    /* float: right; */
+    flex: 1;
+    /* width: 100%; */
   }
   #footer .btmmenu {
     overflow: hidden;
